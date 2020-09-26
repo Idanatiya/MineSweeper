@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Minesweeper</title>
+    <link rel="icon" href="imgs/icon.png" />
+</head>
+
+<body onload="init()">
+    <div class="container">
+        <div class="header">
+            <h1>MineSweeper - Rick edition</h1>
+            <div class="smiley">
+                <span><img onclick="init()" class="smile-img" src="imgs/rick-win.png" alt="" /></span>
+            </div>
+            <!--hints-->
+            <div class="hints">
+                <p>Meeseeks Left:</p>
+                <span><img src="imgs/messeeks.png" class="hint" onclick="hintClicked(this)" /></span>
+                <span><img src="imgs/messeeks.png" class="hint" onclick="hintClicked(this)" /></span>
+                <span><img src="imgs/messeeks.png" class="hint" onclick="hintClicked(this)" /></span>
+            </div>
+            <!--lifes-->
+            <div class="lifes">
+                <span class="life"></span> Lifes left
+            </div>
+            <!--manuel-mode-->
+            <div class="manual-mode">
+                <img src="imgs/pickaxe.png" class="axe" onclick="activateManualMode(this)" />
+                <button onclick="hideManualMines()">End Manual Mode</button>
+                <button class="undo" onclick="undoClicked()">Undo</button>
+            </div>
+        </div>
+        <!--the board-->
+        <table border="1" cellpadding="20">
+            <tbody class="board"></tbody>
+        </table>
+        <!--bubble-->
+        <div class="bubble">
+            <span class="bubble-span"></span>
+            <!-- <button onclick="init()">Play again</button> -->
+        </div>
+        <!--level modal-->
+        <div class="level-modal">
+            <div class="level-buttons">
+                <button class="beginner" onclick="pickMode(4)">Beginner</button>
+                <button class="medium" onclick="pickMode(8)">Medium</button>
+                <button class="expert" onclick="pickMode(12)">Expert</button>
+            </div>
+        </div>
+        <!--safe-click-->
+        <div class="safe">
+            <button class="safe-click" onclick="revealSafeCell()"> <img src="imgs/hint.png" class="safe-rick" /> Safe
+                Click</button>
+            <p class="click-left">3 Safe Click Available</p>
+        </div>
+        <!--timer-->
+        <div class="timer">
+            <span class="time"></span>
+        </div>
+    </div>
+    </div>
+    <button onclick="openModal()" class="leaderboard-btn">🏆 Leaderboard</button>
+
+    <div class="score-modal">
+        <div class="score-popup">
+            <button onclick="closeModal()">✖️</button>
+            <h3>Leaderboard</h3>
+            <p>Beginner: <span class="score-beginner"></span></p>
+            <p>Medium: <span class="score-medium"></span></p>
+            <p>Expert: <span class="score-expert"></span></p>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #97ce4c; */
+
+body {
+    background-color: gray;
+    background-image: url('../imgs/pickle-rick.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 650px 900px;
+    background-position-y: 400px;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    /* margin: 50px; */
+    font-family: cursive, sans-serif;
+    font-size: 50px;
+    color: white;
+    /* font-family: cursive; */
+}
+
+.lifes {
+    font-size: 25px;
+    font-family: cursive, sans-serif;
+}
+
+.timer {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    color: red;
+    font-family: cursive, sans-serif;
+    font-weight: bold;
+}
+
+.board td {
+    width: 75px;
+    height: 76px;
+    text-align: center;
+    padding: 6px;
+    transition: .5s;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+table td {
+    background-color: black;
+}
+
+/*show class*/
+
+.show {
+    background: white;
+    color: black;
+}
+
+/*show class only in hint-mode*/
+
+.hint-show {
+    background: white;
+    color: black;
+}
+
+/*hit mine class*/
+
+.hit-mine {
+    background: red;
+}
+
+.bubble {
+    background-color: #f8f8f8;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 60px;
+    position: absolute;
+    right: 250px;
+    top: 390px;
+    animation: fade 0.5s ease;
+    transition: all 0.5 ease;
+    display: none;
+    color: black;
+}
+
+.bubble-span {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.bubble button {
+    margin: 10px;
+    color: white;
+    background: black;
+    outline: 0;
+    border: 0;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+/*level modal*/
+
+.level-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.level-buttons h3 {
+    font-size: 30px;
+}
+
+.level-buttons {
+    display: inline;
+    border-radius: 15px;
+}
+
+.level-modal button {
+    margin: 10px;
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.level-modal button:hover, .leaderboard-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+/*color of mode buttons*/
+
+.beginner {
+    background-color: #44281d;
+}
+
+.medium {
+    background-color: #23395d;
+}
+
+.expert {
+    background-color: #f0e14a;
+}
+
+/*style for flag*/
+
+.portal-gun {
+    width: 70px;
+    height: 70px;
+}
+
+.gun {
+    width: 55px;
+    height: 55px;
+}
+
+/*smiley style*/
+
+.smile-img {
+    width: 100px;
+    height: 100px;
+}
+
+.smile-img:hover {
+    transform: rotateZ(360deg) scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+/*hints style*/
+
+.hints {
+    position: absolute;
+    top: 300px;
+    left: 40px
+}
+
+.hint {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.hints p {
+    color: white;
+    font-size: 12px;
+    font-family: cursive, sans-serif;
+}
+
+.hint-effect {
+    transform: scale(1.4);
+    transition: transform 0.5s ease-in;
+}
+
+/*safe click style*/
+
+.safe {
+    position: absolute;
+    left: 200px;
+    top: 700px;
+    text-align: center;
+    display: none;
+}
+
+.safe-rick {
+    width: 50px;
+    height: 50px;
+}
+
+.click-left {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.safe-click {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.safe-click:hover {
+    opacity: 0.9;
+}
+
+/*manual div style*/
+
+.manual-mode button {
+    border: 0;
+    outline: 0;
+    background: #c8c8c8;
+    color: black;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.rick {
+    width: 100px;
+    height: 100px;
+}
+
+.axe {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.axe-click-effect {
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in;
+}
+
+/*add nice effect*/
+
+.feature-click-effect {
+    transform: scale(1.4);
+    transition: transform 0.5s ease-in;
+}
+
+/*alerts*/
+
+.alert-danger {
+    padding: 12px;
+    width: 200px;
+    background-color: #f44336;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: cursive, sans-serif;
+    margin-bottom: 10px;
+    display: none;
+    position: absolute;
+    right: 250px;
+    top: 390px;
+    /* display: none; */
+}
+
+.alert-success {
+    padding: 12px;
+    width: 200px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: cursive, sans-serif;
+    margin-bottom: 10px;
+    display: none;
+    position: absolute;
+    right: 250px;
+    top: 390px;
+    ;
+}
+
+/*score modal*/
+
+.score-modal {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.score-popup {
+    background: white;
+    padding: 7rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    font-family: cursive;
+    margin: 10px;
+    animation: fade 0.5s ease-in;
+}
+
+.score-popup span {
+    font-size: 15px;
+}
+
+.score-modal h3 {
+    font-size: 30px;
+}
+
+.score-modal button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    padding: 0.4rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    background: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.leaderboard-btn {
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    outline: 0;
+    border: 0;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 20px;
+    background: black;
+}
+
+.mine {
+    width: 40px;
+    height: 40px;
+}
+
+.show-bomb {
+    background: red;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width:1764px) {
+    body {
+        background-size: 600px 900px;
+        background-position-y: 500px;
+    }
+    .header h1 {
+        font-size: 35px;
+    }
+    .gun {
+        width: 40px;
+        height: 40px;
+    }
+    .mine {
+        width: 35px;
+        height: 35px;
+    }
+    .board td {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .bubble {
+        width: 250px;
+        font-size: 10px;
+        right: 200px;
+        top: 450px;
+    }
+    .hint {
+        width: 90px;
+        height: 90;
+    }
+    .safe {
+        position: absolute;
+        left: 50px;
+        top: 700px;
+        text-align: center;
+        display: none;
+    }
+}
