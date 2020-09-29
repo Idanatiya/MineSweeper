@@ -600,12 +600,12 @@ max-width: 1900px 1900px - 1000px  */
         height: 40px;
     }
     .mine {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
     .board td {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 16px;
     }
     .bubble {
@@ -658,6 +658,7 @@ max-width: 1900px 1900px - 1000px  */
         font-size: 14px;
     }
     .change-user {
+        bottom: 80px;
         font-size: 14px;
     }
     .hints {
