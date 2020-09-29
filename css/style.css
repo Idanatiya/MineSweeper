@@ -605,8 +605,8 @@ max-width: 1900px 1900px - 1000px  */
         height: 25px;
     }
     .board td {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 16px;
     }
     .bubble {
@@ -680,12 +680,12 @@ max-width: 1900px 1900px - 1000px  */
         height: 40px;
     }
     .mine {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     .gun {
-        width: 28px;
-        height: 28px;
+        width: 23px;
+        height: 23px;
     }
     .lifes {
         font-size: 15px;
