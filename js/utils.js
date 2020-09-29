@@ -7,6 +7,7 @@ function getRandomInteger(min, max) {
 
 
 function formatTimestamp(secs) {
+    // console.log('secs:', secs)
     var hours = Math.floor(secs / (60 * 60));
     var minutes = Math.floor(secs / 60);
     var seconds = Math.floor(secs % 60);
@@ -57,13 +58,42 @@ function openModal(elModal) {
     elModal.style.display = 'flex';
 }
 
-function copyMat(mat) {
+function deepCopyBoard(mat) {
     var newMat = [];
     for (var i = 0; i < mat.length; i++) {
         newMat[i] = [];
         for (var j = 0; j < mat[0].length; j++) {
-            newMat[i][j] = mat[i][j];
+            newMat[i][j] = {
+                minesAroundCell: mat[i][j].minesAroundCell,
+                isShowen: mat[i][j].isShowen,
+                isMine: mat[i][j].isMine,
+                isMarked: mat[i][j].isMarked
+            }
         }
     }
     return newMat;
 }
+
+function deepCopyObj(gameInfo) {
+    var game = {
+        isOn: gameInfo.isOn,
+        isWon: gameInfo.isWon,
+        showCount: gameInfo.showCount,
+        markedCount: gameInfo.markedCount,
+        secsPassed: gameInfo.secsPassed,
+    }
+    return game
+}
+
+
+// function deepCopyMat(mat) {
+//     var copyMat = [];
+//     for (var i = 0; i < mat.length; i++) {
+//         var rowPointer = mat[i];
+//         var rowCopy = rowPointer.slice();
+//         copyMat[i] = rowCopy;
+//     }
+//     return copyMat;
+// }
+
+

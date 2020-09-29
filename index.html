@@ -30,14 +30,14 @@
             <!--manuel-mode-->
             <div class="manual-mode">
                 <img src="imgs/pickaxe.png" class="axe" onclick="activateManualMode(this)" />
-                <button onclick="hideManualMines()">End Manual Mode</button>
-                <button class="undo" onclick="undoClicked()">Undo</button>
+                <button class="manual-btn" onclick="hideManualMines()">End Manual Mode</button>
             </div>
         </div>
         <!--the board-->
-        <table border="1" cellpadding="20">
+        <table class="board-table">
             <tbody class="board"></tbody>
         </table>
+        <button class="undo" onclick="undoClicked()">🔁 Undo</button>
         <!--bubble-->
         <div class="bubble">
             <span class="bubble-span"></span>
@@ -63,9 +63,45 @@
         </div>
     </div>
     </div>
+    <button class="change-user" onclick="changeUser()">Change user</button>
     <button onclick="openModal()" class="leaderboard-btn">🏆 Leaderboard</button>
 
     <div class="score-modal">
+        <div class="score-popup">
+            <button onclick="closeModal()">❌</button>
+            <h3>Leaderboard</h3>
+            <table class="score-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Seconds</th>
+                    <th>Date</th>
+                    <th>Mode</th>
+                </tr>
+                <tr>
+                    <td class="td1-name">None</td>
+                    <td class="td1-time">None</td>
+                    <td class="td1-date"></td>
+                    <td class="td1-mode">Beginner</td>
+                </tr>
+                <tr>
+                    <td class="td2-name">None</td>
+                    <td class="td2-time">None</td>
+                    <td class="td2-date"></td>
+                    <td class="td2-mode">Medium</td>
+                </tr>
+                <tr>
+                    <td class="td3-name">None</td>
+                    <td class="td3-time">None</td>
+                    <td class="td3-date"></td>
+                    <td class="td3-mode">Expert</td>
+                </tr>
+            </table>
+            <!-- <p>Beginner: <span class="score-beginner"></span></p>
+            <p>Medium: <span class="score-medium"></span></p>
+            <p>Expert: <span class="score-expert"></span></p> -->
+        </div>
+    </div>
+    <!-- <div class="score-modal">
         <div class="score-popup">
             <button onclick="closeModal()">✖️</button>
             <h3>Leaderboard</h3>
@@ -73,7 +109,7 @@
             <p>Medium: <span class="score-medium"></span></p>
             <p>Expert: <span class="score-expert"></span></p>
         </div>
-    </div>
+    </div> -->
 
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
