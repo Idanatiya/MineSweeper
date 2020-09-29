@@ -640,11 +640,12 @@ max-width: 1900px 1900px - 1000px  */
         padding: 0.5rem 1rem;
     }
     .axe {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
-    .manual-mode button {
+    .manual-mode .manual-btn {
         font-size: 12px;
+        padding: 0.5rem 0.5rem;
     }
     .undo {
         font-size: 14px;
@@ -660,14 +661,14 @@ max-width: 1900px 1900px - 1000px  */
         font-size: 14px;
     }
     .hints {
-        top: 200px;
+        top: 150px;
     }
     .hint {
         width: 70px;
         height: 70px;
     }
     .safe {
-        top: 400px;
+        top: 300px;
     }
     .safe-click {
         font-size: 15px;
@@ -677,12 +678,12 @@ max-width: 1900px 1900px - 1000px  */
         height: 40px;
     }
     .mine {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
     .gun {
-        width: 22px;
-        height: 22px;
+        width: 28px;
+        height: 28px;
     }
     .lifes {
         font-size: 15px;

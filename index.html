@@ -15,6 +15,11 @@
             <h1>MineSweeper - Rick edition</h1>
             <div class="smiley">
                 <span><img onclick="init()" class="smile-img" src="imgs/rick-win.png" alt="" /></span>
+                <!--manuel-mode-->
+                <div class="manual-mode">
+                    <img src="imgs/pickaxe.png" class="axe" onclick="activateManualMode(this)" />
+                    <button class="manual-btn" onclick="hideManualMines()">End Manual Mode</button>
+                </div>
             </div>
             <!--hints-->
             <div class="hints">
@@ -26,11 +31,6 @@
             <!--lifes-->
             <div class="lifes">
                 <span class="life"></span> Lifes left
-            </div>
-            <!--manuel-mode-->
-            <div class="manual-mode">
-                <img src="imgs/pickaxe.png" class="axe" onclick="activateManualMode(this)" />
-                <button class="manual-btn" onclick="hideManualMines()">End Manual Mode</button>
             </div>
         </div>
         <!--the board-->
