@@ -64,7 +64,7 @@ body {
 }
 
 table.board-table {
-    margin: 20px auto;
+    margin: 9px auto;
     background: black;
 }
 
@@ -154,7 +154,7 @@ table.board-table {
     cursor: pointer;
 }
 
-.level-modal button:hover, .leaderboard-btn:hover, .change-user:hover {
+.level-modal button.level-modal button:hover, .leaderboard-btn:hover, .change-user:hover {
     opacity: 0.8;
     transform: scale(1.1);
     transition: all 0.5s ease;
@@ -584,5 +584,102 @@ max-width: 1900px 1900px - 1000px  */
         top: 700px;
         text-align: center;
         display: none;
+    }
+}
+
+@media (max-width:1526px) {
+    body {
+        background-size: 500px 700px;
+        background-position-y: 200px;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    .gun {
+        width: 40px;
+        height: 40px;
+    }
+    .mine {
+        width: 35px;
+        height: 35px;
+    }
+    .board td {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+    .bubble {
+        width: 220px;
+        font-size: 10px;
+        right: 200px;
+        top: 200px;
+    }
+    .bubble-span {
+        font-size: 15px;
+    }
+    .hint {
+        width: 90px;
+        height: 90;
+    }
+    .safe {
+        position: absolute;
+        left: 50px;
+        top: 700px;
+        text-align: center;
+        display: none;
+    }
+    .smile-img {
+        width: 55px;
+        height: 55px;
+    }
+    .level-modal button {
+        font-size: 18px;
+    }
+    .axe {
+        width: 40px;
+        height: 40px;
+    }
+    .manual-mode button {
+        font-size: 12px;
+    }
+    .undo {
+        font-size: 18px;
+    }
+    .score-popup {
+        padding: 4rem;
+    }
+    .leaderboard-btn {
+        font-size: 14px;
+    }
+    .change-user {
+        font-size: 14px;
+    }
+    .hints {
+        top: 200px;
+    }
+    .hint {
+        width: 70px;
+        height: 70px;
+    }
+    .safe {
+        top: 400px;
+    }
+    .safe-click {
+        font-size: 15px;
+    }
+    .safe-rick {
+        width: 40px;
+        height: 40px;
+    }
+    .mine {
+        width: 30px;
+        height: 30px;
+    }
+    .gun {
+        width: 27px;
+        height: 27px;
+    }
+    .lifes {
+        font-size: 15px;
     }
 }
