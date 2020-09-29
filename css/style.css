@@ -64,7 +64,7 @@ body {
 }
 
 table.board-table {
-    margin: 9px auto;
+    margin: 1px auto;
     background: black;
 }
 
@@ -285,6 +285,7 @@ table.board-table {
     border-radius: 10px;
     cursor: pointer;
     color: white;
+    margin-top: 5px;
     animation: rainbow 5s infinite alternate-reverse;
 }
 
@@ -593,7 +594,7 @@ max-width: 1900px 1900px - 1000px  */
         background-position-y: 200px;
     }
     .header h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .gun {
         width: 40px;
@@ -604,8 +605,8 @@ max-width: 1900px 1900px - 1000px  */
         height: 25px;
     }
     .board td {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         font-size: 16px;
     }
     .bubble {
@@ -632,8 +633,8 @@ max-width: 1900px 1900px - 1000px  */
         display: none;
     }
     .smile-img {
-        width: 55px;
-        height: 55px;
+        width: 45px;
+        height: 45px;
     }
     .level-modal button {
         font-size: 15px;
@@ -694,5 +695,8 @@ max-width: 1900px 1900px - 1000px  */
     }
     .time {
         font-size: 2;
+    }
+    .manual-mode {
+        display: inline;
     }
 }
