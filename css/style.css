@@ -46,7 +46,7 @@ body {
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 40px;
+    font-size: 30px;
     color: red;
     font-family: cursive, sans-serif;
     font-weight: bold;
@@ -589,7 +589,7 @@ max-width: 1900px 1900px - 1000px  */
 
 @media (max-width:1526px) {
     body {
-        background-size: 500px 700px;
+        background-size: 350px 700px;
         background-position-y: 200px;
     }
     .header h1 {
@@ -604,18 +604,21 @@ max-width: 1900px 1900px - 1000px  */
         height: 35px;
     }
     .board td {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
         font-size: 16px;
     }
     .bubble {
         width: 220px;
+        height: 100px;
         font-size: 10px;
-        right: 200px;
+        right: 135px;
         top: 200px;
     }
     .bubble-span {
         font-size: 15px;
+        padding: 0;
+        text-align: center;
     }
     .hint {
         width: 90px;
@@ -633,7 +636,8 @@ max-width: 1900px 1900px - 1000px  */
         height: 55px;
     }
     .level-modal button {
-        font-size: 18px;
+        font-size: 15px;
+        padding: 0.5rem 1rem;
     }
     .axe {
         width: 40px;
@@ -643,7 +647,8 @@ max-width: 1900px 1900px - 1000px  */
         font-size: 12px;
     }
     .undo {
-        font-size: 18px;
+        font-size: 14px;
+        padding: 0.5rem 1rem;
     }
     .score-popup {
         padding: 4rem;
@@ -672,14 +677,20 @@ max-width: 1900px 1900px - 1000px  */
         height: 40px;
     }
     .mine {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
     .gun {
-        width: 27px;
-        height: 27px;
+        width: 22px;
+        height: 22px;
     }
     .lifes {
         font-size: 15px;
+    }
+    .timer {
+        position: absolute;
+    }
+    .time {
+        font-size: 2;
     }
 }
