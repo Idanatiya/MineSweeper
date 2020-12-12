@@ -1,4 +1,5 @@
-### Hi there 👋
+### General
+A coding chellange to create a minesweeper
 
 
 ## Live Demo
