@@ -3,5 +3,5 @@ A coding chellange to create a minesweeper
 
 
 ## Live Demo
-https://idanatiya.github.io/idanatiya/
+https://idanatiya.github.io/MineSweeper/
 
