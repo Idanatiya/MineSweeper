@@ -1,5 +1,5 @@
 ### General
-A coding chellange to create a minesweeper using Vanill JS/HTM
+A coding chellange to create a minesweeper using Vanilla JS/HTM
 
 ## Live Demo
 https://idanatiya.github.io/MineSweeper/
